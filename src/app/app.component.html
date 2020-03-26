@@ -1,3 +1,22 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content>
+        <ion-menu-toggle>
+          <ion-button routerLink="/signed/tabs/tab1">Tabs</ion-button>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-button routerLink="/">Sign</ion-button>
+        </ion-menu-toggle>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
 </ion-app>

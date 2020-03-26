@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab2Page } from './tab2.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
+import { Facebook } from '@ionic-native/facebook/ngx';
 
 @NgModule({
   imports: [
@@ -12,8 +13,12 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    RouterModule.forChild([{ path: '', component: Tab2Page }])
+    RouterModule.forChild([{path: '', component: Tab2Page}])
   ],
-  declarations: [Tab2Page]
+  declarations: [Tab2Page],
+  providers: [
+    Facebook
+  ]
 })
-export class Tab2PageModule {}
+export class Tab2PageModule {
+}

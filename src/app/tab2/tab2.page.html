@@ -1,5 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>
       Tab 2
     </ion-title>
@@ -14,4 +17,8 @@
   </ion-header>
 
   <app-explore-container name="Tab 2 page"></app-explore-container>
+
+  <ion-button (click)="sign()">
+    Facebook
+  </ion-button>
 </ion-content>

@@ -14,7 +14,7 @@ export class Tab2Page {
   sign() {
     this.fb.login(['public_profile', 'user_friends', 'email'])
       .then((res: FacebookLoginResponse) => console.log('Logged into Facebook!', res))
-      .catch(e => console.log('Error logging into Facebook', e));
+      .catch(e => console.error('Error logging into Facebook', e));
   }
 
 }

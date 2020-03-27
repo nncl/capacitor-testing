@@ -11,5 +11,10 @@
     <param name="ios-package" value="CDVLocation"/>
   </feature>
 
+  <feature name="GooglePlus">
+    <param name="ios-package" value="GooglePlus"/>
+    <param name="onload" value="true"/>
+  </feature>
+
   
 </widget>

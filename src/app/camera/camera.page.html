@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>camera</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img [src]="picture" *ngIf="picture" alt="Sample">
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="start()">
+      <ion-icon name="camera-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-button (click)="take()">
+      <ion-icon name="play-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-button (click)="stop()">
+      <ion-icon name="stop-circle-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
